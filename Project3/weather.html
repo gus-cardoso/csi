@@ -1,1 +1,78 @@
-.
+<!DOCTYPE html>
+<html lang="en">
+<!-- Written By: Gustavo Cardoso
+    Class: AD110 - CH7
+    Date: 04/11/2024 
+-->
+<head>
+<meta charset="utf-8">
+<meta name="Gustavo Cardoso"content="Weather Page">
+<title>Project 3</title>
+<style>
+        table {
+            width: auto;
+            border-collapse: collapse;
+            margin: 0;
+            margin-top: 20px;                   
+        }
+        figure {           
+            margin: 0;
+        }
+        th, td{
+            padding: 10px 5px;
+            border: transparent;
+            text-align: left;
+            height: 10px;
+            font-weight: normal;
+        }
+        th {
+            text-align: right
+        }
+        header a:hover {
+            background-color: silver;
+        }
+        a:visited {
+            color: blue;
+        }
+
+</style>
+
+</head>
+<body>
+    <header>
+        <h1>World Weather</h1>
+        <h3>
+        <a href="#south-america">South America</a>&nbsp;|&nbsp;
+        <a href="#north-america">North America</a>&nbsp;|&nbsp;
+        <a href="#europe">Europe</a>
+        </h3>
+    </header>
+    <figure>
+        <img src="thunder.jpg" alt="Thunder">
+    </figure>
+    <table>
+        <tbody>
+
+        <tr>
+            <th id="south-america" rowspan="2">South America:</th>
+        </tr>
+        <tr>
+            <td><a href="https://weather.com/weather/today/l/-16.69,-49.26" target="_blank">Goiânia, Brazil</a><br>
+                <a href="https://weather.com/weather/today/l/-33.45,-70.67" target="_blank">Santiago, Chile</a>
+            </td>
+        </tr>
+        <tr>
+            <th id="north-america" rowspan="2">North America:</th>
+        </tr>
+        <tr>
+            <td><a href="https://weather.com/weather/today/l/42.36,-71.06" target="_blank">Boston, EUA</a><br>
+                <a href="https://weather.com/weather/today/l/45.50,-73.57" target="_blank">Montreal, Canada</a></td>
+        </tr>
+        <th id="europe" rowspan="2">Europe:</th>
+        <tr>
+            <td><a href="https://weather.com/weather/today/l/38.72,-9.14" target="_blank">Lisbon, Portugal</a><br>
+                <a href="https://weather.com/weather/today/l/41.90,12.48" target="_blank">Rome, Italy</a></td>
+        </tr>
+    </table>
+</body>
+</html>
