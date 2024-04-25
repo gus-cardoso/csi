@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Gustavo Cardoso" content="Root Beer Float Maker">
+    <title>Root Beer Float Maker</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="grid-layout">
+        <div style="grid-area: header">
+            <header>
+                <h1>Root Beer Float Maker</h1>
+            </header>
+        </div>
+        <div style="grid-area: ice">
+            <div class="icecap">Ice Cream</div>
+            <div class="ice-cream">            
+                <form>
+                    <input type="checkbox" id="vanilla" name="ice">
+                    <label for="vanilla">vanilla</label><br>
+
+                    <input type="checkbox" id="chocolate" name="ice">
+                    <label for="chocolate">chocolate</label><br>
+
+                    <input type="checkbox" id="coffee" name="ice">
+                    <label for="coffee">coffee</label><br>
+                </form>
+            </div>
+        </div>
+
+        <div style="grid-area: beers">
+            <div class="rootcap">Root Beers</div>
+            <div class="root-beers">                
+                <form>            
+                    <input type="radio" id="Barq's" name="root" value="Barq's">
+                    <label for="Barq's">Barq's</label><br>
+
+                    <input type="radio" id="A&W" name="root" value="A&W">
+                    <label for="A&W">A&W</label><br>
+
+                    <input type="radio" id="Dad's" name="root" value="Dad's">
+                    <label for="Dad's">Dad's</label><br>
+
+                    <input type="radio" id="IBC" name="root" value="IBC">
+                    <label for="IBC">IBC</label><br>
+                </form>
+            </div>
+        </div>  
+        <div style="grid-area: img">
+            <img src="rootbeer.png" alt="Root Beer">
+        </div>
+        <div style="grid-area: recipe">
+            <div id="button" class="button">
+                <input type="submit" value="I'm ready to make my float!">
+                <div id="recipeContainer" class="recipe-container"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

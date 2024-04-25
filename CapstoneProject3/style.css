@@ -1,0 +1,68 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.grid-layout {
+  padding: 10px;
+  display: grid;
+  grid-gap: 1px;
+  grid-template-areas:
+    'header header header header header header'
+    'ice ice beers beers img img'
+    'recipe recipe recipe recipe img img';
+}
+#recipe{
+  margin-top: 0px;
+}
+#ice, #beers{
+  margin-bottom: 0px;
+}
+.grid-layout > div {
+  padding: 5px;
+  text-align: left;
+  font-size: 18px;
+}
+img {
+  float: left;
+}
+.icecap, .rootcap {
+ background-color: white;
+ padding: 5px;
+ z-index: 1;
+ position: absolute;
+}
+.icecap{
+ margin-left: 18px;
+ 
+}
+.rootcap {
+ margin-left: 15px;
+}
+
+.ice-cream, .root-beers {
+z-index: -1;
+margin-top: 15px;
+border: 2px solid;
+padding: 10px;
+max-width: 120px;
+}
+form{
+  margin-top: 5px;
+  min-width: 120px;
+  position: relative;
+}
+.root-beers {
+min-height: 100px;
+}
+.ice-cream {
+min-height: 60px;
+}
+.button{
+  margin-top: -200px;
+} 
+.recipe-container{
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+}
